@@ -51,15 +51,25 @@ console.log(triangle(10))
 
 '5. String Splitter'
 
-const splitter = string => {
-    return
+let splitter = (string, seperator) => {
+    if (!string) 
+        return ''
+    
+    let idx = string[0]
+
+    if (idx === seperator)
+        idx = ''
+
+    return idx + splitter(string.slice(1), seperator)
 }
+
+console.log(splitter('02/20/2020', '/'))
 
 
 '6. Fibonacci'
 
 const fibonacci = nth => {
-    if (nth < 2) {
+    if (nth <= 1) {
         return 1
     }
     return fibonacci(nth - 1) + fibonacci(nth - 2)
