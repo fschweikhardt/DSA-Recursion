@@ -174,3 +174,7 @@ organization(f)
 
 '12. Binary Representation'
 
+const binary = number => {
+    return number.toString(2)
+}
+console.log(binary(25))
