@@ -95,4 +95,82 @@ console.log(factorial(5))
 '8. Find a way out of the maze'
 
 
+'9. Find ALL the ways out of the maze'
+
+
+'10. Anagrams'
+
+let anagrams = string => {
+    if (string === '')
+        return ''
+    let sliceChar = string[0]
+        
+}
+
+
+'11. Organization Chart'
+
+let f = {
+    "Zuckerberg": {
+        "Schroepfer": {
+            "Bosworth": {
+                "Steve": {},
+                "Kyle": {},
+                "Andra": {}
+            },
+            "Zhao": {
+                "Richie": {},
+                "Sofia": {},
+                "Jen": {}
+            }
+        },
+        "Schrage": {
+            "VanDyck": {
+                "Sabrina": {},
+                "Michelle": {},
+                "Josh": {}
+            },
+            "Swain": {
+                "Blanch": {},
+                "Tom": {},
+                "Joe": {}
+            }
+        },
+        "Sandberg": {
+            "Goler": {
+                "Eddie": {},
+                "Julie": {},
+                "Annie": {}
+            },
+            "Hernandez": {
+                "Rowi": {},
+                "Inga": {},
+                "Morgan": {}
+            },
+            "Moissinac": {
+                "Amy": {},
+                "Chuck": {},
+                "Vinni": {}
+            },
+            "Kelley": {
+                "Eric": {},
+                "Ana": {},
+                "Wes": {}
+            }
+        }
+    }
+}
+
+let organization = (people, space = 0) => {
+    let tab = " ".repeat(space * 5)
+    Object.keys(people).forEach(key => {
+      console.log(tab + key);
+      organization(people[key], space + 1)
+    })
+  }
+  
+organization(f)
+
+
+'12. Binary Representation'
 
