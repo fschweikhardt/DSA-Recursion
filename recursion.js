@@ -7,7 +7,7 @@ const sheep = num => {
         return console.log('All the sheep jumped!!')
     }
     console.log(num + ': Another sheep jumps over the fence')
-    sheep(num - 1)
+    return sheep(num - 1)
     }
 
 //sheep(3)
@@ -17,7 +17,7 @@ const sheep = num => {
 
 const powerCalculator = (base, exponent) => {
     if (exponent < 0 ) {
-        return 'exponent should be >= 0'
+        return console.log('exponent should be >= 0')
     }
     if (exponent === 0) {
         return 1
@@ -25,7 +25,7 @@ const powerCalculator = (base, exponent) => {
     return base * powerCalculator(base, exponent - 1)
 }
 
-// console.log(powerCalculator(10,2))
+console.log(powerCalculator(10,2))
 // console.log(powerCalculator(10,100))
 //console.log(powerCalculator(10,-2))
 
