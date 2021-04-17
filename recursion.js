@@ -1,4 +1,4 @@
-DSA-Recursion
+'DSA-Recursion'
 
 '1. Counting Sheep'
 
@@ -10,7 +10,7 @@ const sheep = num => {
     sheep(num - 1)
     }
 
-sheep(3)
+//sheep(3)
 
 
 '2. Power Calculator' 
@@ -25,9 +25,9 @@ const powerCalculator = (base, exponent) => {
     return base * powerCalculator(base, exponent - 1)
 }
 
-console.log(powerCalculator(10,2))
-console.log(powerCalculator(10,100))
-console.log(powerCalculator(10,-2))
+// console.log(powerCalculator(10,2))
+// console.log(powerCalculator(10,100))
+//console.log(powerCalculator(10,-2))
 
 
 '3. Reverse String'
@@ -35,7 +35,7 @@ console.log(powerCalculator(10,-2))
 const reverse = string => {
     return string == '' ? '' : reverse(string.substr(1)) + string.charAt(0)
 }
-console.log(reverse('hello'))
+//console.log(reverse('hello'))
 
 
 '4. nth Triangular Number' + "is this right?"
@@ -46,7 +46,7 @@ const triangle = n => {
     }
     return n + triangle(n - 1)
 }
-console.log(triangle(10))
+//console.log(triangle(10))
 
 
 '5. String Splitter'
@@ -63,7 +63,7 @@ let splitter = (string, seperator) => {
     return idx + splitter(string.slice(1), seperator)
 }
 
-console.log(splitter('02/20/2020', '/'))
+//console.log(splitter('02/20/2020', '/'))
 
 
 '6. Fibonacci'
@@ -75,8 +75,8 @@ const fibonacci = nth => {
     return fibonacci(nth - 1) + fibonacci(nth - 2)
 }
 
-console.log(fibonacci(7))
-console.log(fibonacci(5))
+// console.log(fibonacci(7))
+// console.log(fibonacci(5))
 
 
 '7. Factorial'
@@ -88,8 +88,8 @@ const factorial = (num) => {
     return num * factorial(num - 1)
 }
 
-console.log(factorial(3))
-console.log(factorial(5))
+// console.log(factorial(3))
+// console.log(factorial(5))
 
 
 '8. Find a way out of the maze'
@@ -99,12 +99,13 @@ console.log(factorial(5))
 
 
 '10. Anagrams'
+let string1 = 'amazon'
+let string2 = 'bananna'
+let string3 = 'nozama'
 
-let anagrams = string => {
-    if (string === '')
-        return ''
-    let sliceChar = string[0]
-        
+function anagram(str1, str2) {
+
+    return str1 === str1
 }
 
 
@@ -161,7 +162,7 @@ let f = {
     }
 }
 
-let organization = (people, space = 0) => {
+const organization = (people, space = 0) => {
     let tab = " ".repeat(space * 5)
     Object.keys(people).forEach(key => {
       console.log(tab + key);
@@ -169,7 +170,7 @@ let organization = (people, space = 0) => {
     })
   }
   
-organization(f)
+//organization(f)
 
 
 '12. Binary Representation'
@@ -177,4 +178,4 @@ organization(f)
 const binary = number => {
     return number.toString(2)
 }
-console.log(binary(25))
+//console.log(binary(25))
