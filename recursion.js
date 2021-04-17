@@ -25,7 +25,7 @@ const powerCalculator = (base, exponent) => {
     return base * powerCalculator(base, exponent - 1)
 }
 
-console.log(powerCalculator(10,2))
+//console.log(powerCalculator(10,2))
 // console.log(powerCalculator(10,100))
 //console.log(powerCalculator(10,-2))
 
